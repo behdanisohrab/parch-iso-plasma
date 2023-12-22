@@ -237,7 +237,7 @@ lib32-wayland
 wayland-protocols
 kwayland-integration
 #plasma-wayland-session
-xwaylandvideobridge-bin
+#xwaylandvideobridge-bin
 plasma-wayland-protocols
 
 
