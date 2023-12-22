@@ -226,14 +226,10 @@ markdownpart
 keditbookmarks
 kdebugsettings
 kwalletmanager
-fancontrol-gui
-fancontrol-kcm
 dolphin-plugins
-dwayland
 egl-wayland
 qt6-wayland
 glfw-wayland
-lib32-wayland
 wayland-protocols
 kwayland-integration
 #plasma-wayland-session
@@ -243,8 +239,8 @@ plasma-wayland-protocols
 
 
 #parchlinuxstuff
-#calamares
-#calamares-parch
+calamares
+calamares-parch
 os-prober
 paru
 parch-branding
