@@ -143,6 +143,9 @@ openssl-1.1
 openssl
 
 #Desktop
+baloo
+baloo-widgets
+dolphin
 parch-grub
 kf6
 kde-system
@@ -201,7 +204,6 @@ okular
 kamera
 svgpart
 skanlite
-gwenview
 spectacle
 colord-kde
 kcolorchooser
@@ -225,7 +227,6 @@ markdownpart
 keditbookmarks
 kdebugsettings
 kwalletmanager
-dolphin-plugins
 egl-wayland
 qt6-wayland
 glfw-wayland
