@@ -1,23 +1,14 @@
-version: '3'
+#!/usr/bin/env bash
 
-networks:
-  forgejo:
-    external: false
+set -e
 
-services:
-  server:
-    image: codeberg.org/forgejo/forgejo:1.20
-    container_name: forgejo
-    environment:
-      - USER_UID=1000
-      - USER_GID=1000
-    restart: always
-    networks:
-      - forgejo
-    volumes:
-      - ./forgejo:/data
-      - /etc/timezone:/etc/timezone:ro
-      - /etc/localtime:/etc/localtime:ro
-    ports:
-      - '3000:3000'
-      - '222:22'
+mkdir -p data
+touch data/.runner
+mkdir -p data/.cache
+
+chown -R 1001:1001 data/.runner
+chown -R 1001:1001 data/.cache
+chmod 775 data/.runner
+chmod 775 data/.cache
+chmod g+s data/.runner
+chmod g+s data/.cache
